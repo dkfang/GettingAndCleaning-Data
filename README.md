@@ -20,7 +20,7 @@ run_analysis.R performs the following
 2. It loads in train and test data from "UCI HAR Dataset" folder and merges two data    sets into one. rbind function is used to perform this process
 3. It extracts mean and standard deviation from the features data set. it uses grep     function to extract these values. After extracting these values, it convertes        elements in second column to lower case using tolower and removes "()" using gsub
 4. Activities data set is also loaded, it converts it to lower case using tolower       and removes "_" using gsub. It also specifies column names to "activity" and         "subject" for "y" and "subj" data sets.
-5. Finaly, three data set, "x", "y", and "subj" are merged. Then, this data table is    exported into the tidyData folder in your current directory, name "tidyData.txt".
+5. Finally, three data set, "x", "y", and "subj" are merged. Then, this data table is    exported into the tidyData folder in your current directory, name "tidyData.txt".
 6. From the data set in previous step, creates a second, independent tidy data set      with the average of each variable for each activity and each subject. name           "avgData.txt"
 
 
